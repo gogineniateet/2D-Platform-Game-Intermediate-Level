@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 40688255}
   - component: {fileID: 40688258}
   - component: {fileID: 40688259}
+  - component: {fileID: 40688260}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,7 +154,7 @@ Animator:
   m_GameObject: {fileID: 40688254}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c8d01a13e7fbddd4ab734abec486b850, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1f1f97be83b772e4bb4b27c595763986, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -307,7 +308,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &40688260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40688254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bc8ef401cb174c4fbbef502619bda2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSpeed: 3
+  rb: {fileID: 40688259}
 --- !u!1 &63443472
 GameObject:
   m_ObjectHideFlags: 0
